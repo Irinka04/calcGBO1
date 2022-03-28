@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>calcGBO</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/material-kit.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h3>Калькулятор вашей экономии</h3>
+		<small>посчитайте, сколько вы сэкономите с ГБО</small>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="calc-block">
+					<h4>Выберите данные</h4>
+					<hr>
+					<span>Расход топлива  в год в литрах </span>
+					<div class="form-group">
+						<!-- 1.инпут который показывает ввод колво метров -->
+	    	<input type="text" data-toggle="tooltip" data-placement="top" title="Минимум 20"	value="30" placeholder="46" class="form-control m-count" />
+					</div>
+							
+					<br><br>
+					<span>Цена газа?</span>
+					<div class="radio">
+						<label>
+							<input type="radio" value="17" checked="true" name="typeOfHouse">
+							Пропан 17 р/л.
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" value="21" name="typeOfHouse" >
+							Бутан 21 р/л.
+						</label>
+					</div>
+					<span>Какой бензин</span>
+					<div class="radio">
+						<label>
+							<input type="radio" value="53" checked="true" name="typeOfHouse1">
+							98 Бензин 53 р/л.
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" value="47" name="typeOfHouse1" >
+							95 Бензин 47 руб/л.
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" value="43" name="typeOfHouse1" >
+							92 Бензин  43 руб/л.
+						</label>
+					</div>
+					
+					<br>
+					<span>Годовой пробег в километрах:</span> <br>
+				<p class="fast-range" >
+                  <label>
+										<input type="range" data-toggle="tooltip" title="Минимум 20"
+										data-placement="top" 
+										class="form-control m-count1" min="7" max="3000" step="10" value="30"
+                      name="deadline" placeholder="46"  /></label>
+
+                  <span class="deadline"><span class="deadline-value">***Максимальный пробег в километрах.</span>                  
+                </p>	
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="calc-img">
+					<img src="img_copy/1.jpg" alt="">
+					
+				</div>
+				<h4>Экономия в год:</h4>
+				<h2><span id="price">900000</span> <small>Рублей</small></h2>
+			</div>	
+		</div>
+	</div>
+
+
+	
+	
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/material.min.js"></script>
+	<script src="js/material.min.js"></script>
+	<script src="js/material-kit.js"></script>
+	<script src="js/main.js"></script> 
+	
+	
+</body> 
+</html>	
